@@ -14,6 +14,11 @@ public class StepEvents : MonoBehaviour
         OnStart.Invoke();
     }
 
+    private void Start()
+    {
+        OnStart.Invoke();
+    }
+
     private void OnDisable()
     {
         OnFinish.Invoke();
